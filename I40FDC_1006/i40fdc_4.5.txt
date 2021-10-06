@@ -1,0 +1,10 @@
+- egy konyvet tobb hallgato is hasznal
+- egy hallgato tobb konyvet is hasznal
+- egy konyv egy konyvtarhoz tartozik
+- egy konyvtarhoz tobb kony is tartozik
+- egy konyvtar egy campushoz tartozik
+- egy campushoz tobb konyvtar is tartozik
+- egy konyvhoz tobb szerzo is tartozik
+- egy szerzohoz tobb kony is tartozik
+- egy szerzohoz tobb email cim is tartozik
+
