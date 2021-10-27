@@ -1,0 +1,5 @@
+CREATE TABLE termekek (tkod INT PRIMARY KEY, nev VARCHAR(50) NOT NULL, ear INT CHECK (EAR>0), kategoria CHAR(20));
+
+INSERT INTO termekek VALUES (6, 'tanyer', 2000, 'K3');
+DELETE FROM termekek WHERE ear < X;
+UPDATE termekek SET ear = ear*.9 WHERE kategoria = Y;
