@@ -1,0 +1,41 @@
+INSERT INTO Hallgato VALUES ( "I40FDC", "Nyiri Beata", "GE-BP1", 20001030, 3770, "Sajoszentpeter", "Kuruc", 4 );
+INSERT INTO Hallgato VALUES ( "ASD123", "Gen Eric", "GE-BP2", 19991111, 3500, "Miskolc", "Arany Janos", 11 );
+INSERT INTO Hallgato VALUES ( "Q67FR9", "Puskas Peter", "GE-BP3", 19970214, 3700, "Kazincbarcika", "Irinyi Janos", 23 );
+INSERT INTO Hallgato VALUES ( "GFI0LD", "Aranyi Csaba", "GE-BP1", 19971006, 3700, "Kazincbarcika", "Petofi Sandor", 2 );
+INSERT INTO Hallgato VALUES ( "ZC56YI", "Marton Miklos", "GE-BP3", 19980505, 3600, "Ozd", "Galagonya", 9 );
+
+INSERT INTO Oktato VALUES ( "AYR59T", "Kiss Andras", "AGT");
+INSERT INTO Oktato VALUES ( "QWE123", "Nagy Bence", "IAL");
+INSERT INTO Oktato VALUES ( "OD7J9A", "Kovacs Zoltan", "MRB");
+INSERT INTO Oktato VALUES ( "PI98IU", "Vadasz Denes", "EEI");
+
+INSERT INTO Targy VALUES ( "GEMAK254-B", 3, "Bevezetés a TEX-be", "AYR59T");
+INSERT INTO Targy VALUES ( "GEIAL304-B", 5, "Számítógép hálózatok", "AYR59T");
+INSERT INTO Targy VALUES ( "GEMAK232-B", 5, "Valószínűség-számítás", "QWE123");
+INSERT INTO Targy VALUES ( "GEMAK233-B", 3, "Programozás-elmélet", "QWE123");
+INSERT INTO Targy VALUES ( "GEMAN153-B", 5, "Lineáris algebra B", "OD7J9A");
+INSERT INTO Targy VALUES ( "GEIAL314-B", 5, "Szoftvertechnológia", "PI98IU");
+INSERT INTO Targy VALUES ( "GEIAL322-B", 5, "Adatbázisrendszerek I.", "PI98IU");
+
+INSERT INTO hallgat VALUES ( "I40FDC", "GEMAK254-B");
+INSERT INTO hallgat VALUES ( "I40FDC", "GEMAK232-B");
+INSERT INTO hallgat VALUES ( "I40FDC", "GEIAL322-B");
+INSERT INTO hallgat VALUES ("ASD123", "GEMAK254-B");
+INSERT INTO hallgat VALUES ("ASD123", "GEIAL304-B");
+INSERT INTO hallgat VALUES ("ASD123", "GEMAK232-B");
+INSERT INTO hallgat VALUES ("ASD123", "GEMAK233-B");
+INSERT INTO hallgat VALUES ("ASD123", "GEMAN153-B");
+INSERT INTO hallgat VALUES ("Q67FR9", "GEIAL322-B");
+INSERT INTO hallgat VALUES ("Q67FR9", "GEIAL314-B");
+INSERT INTO hallgat VALUES ("Q67FR9", "GEMAN153-B");
+INSERT INTO hallgat VALUES ("Q67FR9", "GEMAK233-B");
+INSERT INTO hallgat VALUES ("GFI0LD", "GEMAK233-B");
+INSERT INTO hallgat VALUES ("GFI0LD", "GEIAL314-B");
+INSERT INTO hallgat VALUES ("ZC56YI", "GEMAK254-B");
+INSERT INTO hallgat VALUES ("ZC56YI", "GEIAL304-B");
+INSERT INTO hallgat VALUES ("ZC56YI", "GEMAK232-B");
+INSERT INTO hallgat VALUES ("ZC56YI", "GEMAK233-B");
+INSERT INTO hallgat VALUES ("ZC56YI", "GEIAL314-B");
+INSERT INTO hallgat VALUES ("ZC56YI", "GEMAN153-B");
+INSERT INTO hallgat VALUES ("ZC56YI", "GEIAL314-B");
+INSERT INTO hallgat VALUES ("ZC56YI", "GEIAL322-B");
