@@ -1,4 +1,4 @@
-CREATE TABLE Vezeto (vez_id INT PRIMARY KEY, csapat CHAR(50), nev CHAR(50));
+CREATE TABLE Vezeto (vez_id INT PRIMARY KEY, nev CHAR(50), csapat CHAR(50));
 CREATE TABLE Gondviselo (g_id INT PRIMARY KEY, nev CHAR(50));
 CREATE TABLE Cserkesz (cs_id INT PRIMARY KEY, nem CHAR(4), nev CHAR(50), magassag INT, hajszin CHAR(10), szemszin CHAR(10), szuletett INT, vez_id INT REFERENCES Vezeto, g_id INT REFERENCES Gondviselo);
 CREATE TABLE Vevo (vev_id INT PRIMARY KEY, nev CHAR(50), lakcim CHAR(100));

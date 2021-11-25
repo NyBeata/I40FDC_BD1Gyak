@@ -1,0 +1,19 @@
+SELECT * FROM Cserkesz;
+
+SELECT nev, szuletett, magassag FROM Cserkesz WHERE magassag < 160;
+
+SELECT nev, magassag FROM Cserkesz WHERE magassag = (SELECT MAX(magassag) from Cserkesz);
+
+SELECT nev, nem, magassag, hajszin, szuletett FROM Cserkesz WHERE szemszin = 'zold';
+
+SELECT nev, nem, magassag, hajszin, szemszin, szuletett FROM Cserkesz WHERE nem = 'fiu';
+
+SELECT nev FROM Cserkesz WHERE vez_id IN (SELECT vez_id FROM Vezeto WHERE csapat = 'Furge Rokak');
+
+SELECT Cserkesz.nev, Gondviselo.nev FROM Cserkesz INNER JOIN Gondviselo ON Cserkesz.g_id = Gondviselo.g_id ORDER BY Cserkesz.nev;
+
+SELECT Gyarto.nev, AVG(ear) FROM Gyarto INNER JOIN Suti ON Gyarto.gy_id = Suti.gy_id GROUP BY nev;
+
+SELECT lakcim, COUNT(vev_id) vasarlasok_szama FROM Vevo GROUP BY lakcim ORDER BY vasarlasok_szama;
+
+SELECT nev, COUNT(vev_id) eladasok_szama FROM Cserkesz INNER JOIN toleVesz ON Cserkesz.cs_id = toleVesz.cs_id GROUP BY nev;
