@@ -14,6 +14,6 @@ SELECT Cserkesz.nev, Gondviselo.nev FROM Cserkesz INNER JOIN Gondviselo ON Cserk
 
 SELECT Gyarto.nev, AVG(ear) FROM Gyarto INNER JOIN Suti ON Gyarto.gy_id = Suti.gy_id GROUP BY nev;
 
-SELECT lakcim, COUNT(vev_id) vasarlasok_szama FROM Vevo GROUP BY lakcim ORDER BY vasarlasok_szama;
+SELECT lakcim, COUNT(vev_id) AS vasarlasok_szama FROM Vevo GROUP BY lakcim ORDER BY vasarlasok_szama;
 
-SELECT nev, COUNT(vev_id) eladasok_szama FROM Cserkesz INNER JOIN toleVesz ON Cserkesz.cs_id = toleVesz.cs_id GROUP BY nev;
+SELECT nev, COUNT(vev_id) AS eladasok_szama FROM Cserkesz INNER JOIN toleVesz ON Cserkesz.cs_id = toleVesz.cs_id GROUP BY nev;
