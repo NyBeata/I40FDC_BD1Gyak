@@ -1,0 +1,25 @@
+SELECT nev FROM Oktato;
+
+SELECT nev, megnevezes FROM Oktato JOIN Targy ON Oktato.neptunkod = Targy.neptunkod;
+
+SELECT nev, megnevezes FROM Oktato LEFT JOIN Targy ON Oktato.neptunkod = Targy.neptunkod;
+
+SELECT nev, megnevezes FROM Oktato LEFT JOIN Targy ON Oktato.neptunkod = Targy.neptunkod WHERE tanszek="AIF";
+
+SELECT AVG(kredit) FROM Targy;
+
+SELECT COUNT(neptunkod) FROM Oktato WHERE tanszek="AIF";
+
+SELECT megnevezes FROM Targy WHERE kredit = (SELECT MAX(kredit) from Targy);
+
+SELECT nev FROM Oktato WHERE neptunkod NOT IN (SELECT neptunkod FROM Targy GROUP BY neptunkod);
+
+SELECT nev, szul FROM Hallgato;
+
+SELECT tanszek, COUNT(neptunkod) FROM Oktato GROUP BY tanszek;
+
+SELECT kod, COUNT(neptunkod) FROM hallgat GROUP BY kod;
+
+SELECT nev FROM Oktato WHERE neptunkod IN (SELECT neptunkod FROM Targy WHERE kredit < (SELECT AVG(kredit) FROM Targy));
+
+SELECT nev FROM Hallgato WHERE 
