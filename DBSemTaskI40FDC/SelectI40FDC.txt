@@ -8,7 +8,7 @@ SELECT nev, nem, magassag, hajszin, szuletett FROM Cserkesz WHERE szemszin = 'zo
 
 SELECT nev, nem, magassag, hajszin, szemszin, szuletett FROM Cserkesz WHERE nem = 'fiu';
 
-SELECT nev FROM Cserkesz WHERE vez_id IN (SELECT vez_id FROM Vezeto WHERE csapat = 'Furge Rokak');
+SELECT nev FROM Cserkesz WHERE vez_id = (SELECT vez_id FROM Vezeto WHERE csapat = 'Furge Rokak');
 
 SELECT Cserkesz.nev, Gondviselo.nev FROM Cserkesz INNER JOIN Gondviselo ON Cserkesz.g_id = Gondviselo.g_id ORDER BY Cserkesz.nev;
 
